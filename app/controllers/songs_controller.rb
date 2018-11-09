@@ -25,7 +25,9 @@ class SongsController < ApplicationController
   end
 
   def new
-    @song = Song.new
+    if params[:allow_create_songs] == true
+      @song = Song.new
+    end
   end
 
   def create

@@ -11,7 +11,7 @@ class ArtistsController < ApplicationController
     if params[:allow_create_artists] == true
       @artist = Artist.new
     else
-      redirect_to artists_path, 
+      redirect_to artists_path
     end
   end
 
