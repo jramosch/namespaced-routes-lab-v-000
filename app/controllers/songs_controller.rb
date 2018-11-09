@@ -28,7 +28,7 @@ class SongsController < ApplicationController
     if params[:allow_create_songs] == true
       @song = Song.new
     else
-      redirect_to artists_path
+      redirect_to songs_path
     end
   end
 
